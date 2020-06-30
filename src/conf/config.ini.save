@@ -1,0 +1,30 @@
+[database]
+path = mongodb://localhost:27017/pce-erp ;Prod
+;path = mongodb://localhost:27017/pce-erp-dev ;Dev
+
+[app]
+port = 5000
+bodyLimit = 4mb
+environment = dev
+jwtsecret = @pce_erp_jwt
+file_directory = assets/
+file_path = ./assets/
+;public_file_path = 192.168.18.22:5000/  
+<<<<<<< Updated upstream
+;public_file_path = 202.61.51.102:5002/ ; Dev
+public_file_path = 202.61.51.102:5000/  ;Prod
+
+
+ = @pce_erp_cookie
+encryption_key = @pce-erp123
+password_saltRounds = 10
+forceupdate = true
+serverbasepath = http://localhost/api/
+
+[whitelist]
+debug1 = chrome-extension://fhbjgbiflinjbdggehcddcbncdddomop
+debug2 = http://localhost:3002
+debug3 = http://192.168.0.107:3002
+debug4 = http://localhost
+debug5 = http://202.61.51.102
+debug6 = http://192.168.18.22:3002

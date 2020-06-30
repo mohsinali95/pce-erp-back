@@ -1,0 +1,10 @@
+/node_modules
+/package-lock.json
+/build
+/assets/users
+/assets/reports
+/assets/log
+/assets/json/user-credentials.txt
+/src/log/access.log
+/dist
+/.vscode
